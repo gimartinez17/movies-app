@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="movies">Filme</string>
+    <string name="tv_shows">Serien</string>
+    <string name="upcoming_movies">Demnächst</string>
+    <string name="now_playing_movies">Im Kino</string>
+    <string name="on_air_tv_shows">Im TV</string>
+    <string name="airing_today_tv_shows">Heute im TV</string>
+    <string name="explore_genres">Genres erkunden</string>
+    <string name="top_rated">Bestbewertet</string>
+    <string name="trending">Trend</string>
+    <string name="favourite_movies">Lieblingsfilme</string>
+    <string name="favourite_tv_shows">Lieblingsserien</string>
+    <string name="view_all">Alle ansehen</string>
+    <string name="watch_trailer">Trailer ansehen</string>
+
+    <string name="search_placeholder">Suche Filme, Serien…</string>
+    <string name="sign_in">Anmelden</string>
+    <string name="sign_in_title">Sie sind nicht angemeldet</string>
+    <string name="sign_in_message">Bitte melde dich an oder erstelle dein Konto auf TMDB und autorisiere dann die Anwendung, um alle ihre Funktionen in dieser App zu nutzen.</string>
+    <string name="sign_out">Abmelden</string>
+    <string name="sign_out_title">Abmelden</string>
+    <string name="sign_out_message">Sind Sie sicher, dass Sie sich abmelden möchten?</string>
+    <string name="sign_out_confirm">Abmelden</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="tmdb_attribution_message">Alle Daten, einschließlich Bilder und Videos, die in dieser App präsentiert werden, stammen von der TMDB-API. Diese App verwendet die TMDB-API, ist jedoch nicht von <annotation url="https://www.themoviedb.org/">TMDB</annotation> unterstützt, zertifiziert oder anderweitig genehmigt.</string>
+    <string name="just_watch_attribution_message">Die Streaming-Anbieter stammen von JustWatch. Diese App verwendet Anbieterdaten von JustWatch, ist jedoch nicht von <annotation url="https://www.justwatch.com">JustWatch</annotation> unterstützt oder zertifiziert.</string>
+    <string name="setting">Einstellungen</string>
+    <string name="dark_mode">Dunkler Modus</string>
+    <string name="language">Sprache</string>
+    <string name="country">Region</string>
+    <string name="system">System</string>
+    <string name="about">Über</string>
+    <string name="app_description">Movies DB, die ultimative App zur Erkundung und Verfolgung von Filmen und Fernsehsendungen. Bitte beachten Sie, dass sie keine direkte Inhaltsanzeige ermöglicht, sondern detaillierte Informationen über Filme, Fernsehsendungen, Schauspieler und verfügbare Streaming-Anbieter bereitstellt.</string>
+    <string name="system_settings">Systemeinstellungen verwenden</string>
+    <string name="device_language">Gerätesprache</string>
+    <string name="device_country">Geräteland</string>
+    <string name="created_by">Erstellt von\u0020</string>
+
+    <string name="language_restart_title">Neustart erforderlich</string>
+    <string name="language_restart_message">Sprachänderungen werden nach dem Neustart der Anwendung wirksam.</string>
+    <string name="language_restart_cancel">Abbrechen</string>
+    <string name="language_restart_confirm">Jetzt neu starten</string>
+    <string name="language_restart_later">Später neu starten</string>
+
+    <string name="error_message">Ein Fehler ist aufgetreten.\nBitte versuchen Sie es später erneut.</string>
+    <string name="no_internet_connection">Keine Internetverbindung</string>
+    <string name="no_internet_connection_message">Bitte überprüfen Sie Ihre Internetverbindung und versuchen Sie es erneut</string>
+    <string name="retry">Wiederholen</string>
+
+    <string name="empty_favourite_movies">Sie haben keine Lieblingsfilme hinzugefügt.</string>
+    <string name="empty_favourite_tv_shows">Sie haben keine Lieblingsfernsehsendungen hinzugefügt.</string>
+    <string name="empty_user_list">Sie haben dieser Liste keine Elemente hinzugefügt.</string>
+
+    <string name="details_director">Regisseur:\u0020</string>
+    <string name="details_directors">Regisseure:\u0020</string>
+    <string name="details_writer">Drehbuchautor:\u0020</string>
+    <string name="details_writers">Drehbuchautoren:\u0020</string>
+    <string name="details_creator">Schöpfer:\u0020</string>
+    <string name="details_creators">Schöpfer:\u0020</string>
+    <string name="details_cast">Besetzung</string>
+    <string name="details_season">Staffel</string>
+    <string name="details_seasons">Staffeln</string>
+    <string name="details_release_date">Veröffentlichungsdatum:\u0020</string>
+    <string name="details_overview">Überblick</string>
+    <string name="details_providers">Schau es an auf</string>
+    <string name="details_recommended_movies">Empfohlene Filme: </string>
+    <string name="details_recommended_tv_shows">Empfohlene Serien: </string>
+
+    <string name="person_biography">Biografie</string>
+    <string name="person_known_for">Bekannt für</string>
+    <string name="person_personal_info">Zur Person</string>
+    <string name="person_birthdate">Geboren am:\u0020</string>
+    <string name="person_deathday">Verstorben am:\u0020</string>
+    <string name="person_years_old">Jahre alt</string>
+    <string name="person_place_of_birth">Geboren in:\u0020</string>
+
+    <string name="watch_now">Jetzt ansehen</string>
+    <string name="see_more">\u0020… Mehr anzeigen</string>
+    <string name="more_info">Mehr Informationen</string>
+    <string name="delete">Löschen</string>
+
+    <string name="create_list">Liste erstellen</string>
+    <string name="delete_list">Liste löschen</string>
+    <string name="edit_list">Liste bearbeiten</string>
+    <string name="name">Name</string>
+    <string name="description">Beschreibung</string>
+    <string name="private_list">Privat</string>
+    <string name="public_list">Öffentlich</string>
+    <string name="sort_by">Sortieren nach</string>
+    <string name="is_public_list">Öffentliche Liste?</string>
+    <string name="original_order_asc">Original aufsteigend</string>
+    <string name="original_order_desc">Original absteigend</string>
+    <string name="vote_average_asc">Bewertung aufsteigend</string>
+    <string name="vote_average_desc">Bewertung absteigend</string>
+    <string name="release_date_asc">Veröffentlichungsdatum aufsteigend</string>
+    <string name="release_date_desc">Veröffentlichungsdatum absteigend</string>
+    <string name="primary_release_date_asc">Hauptveröffentlichungsdatum aufsteigend</string>
+    <string name="primary_release_date_desc">Hauptveröffentlichungsdatum absteigend</string>
+    <string name="title_asc">Titel (A-Z)</string>
+    <string name="title_desc">Titel (Z-A)</string>
+    <string name="delete_list_title">Bist du sicher?</string>
+    <string name="delete_list_body">Durch Klicken auf Ja wird diese Liste dauerhaft gelöscht.</string>
+    <string name="confirm">Ja</string>
+    <string name="item_added">Element erfolgreich hinzugefügt!</string>
+
+    <string name="known_for_acting">Darsteller</string>
+    <string name="known_for_writing">Drehbuch</string>
+    <string name="known_for_directing">Regie</string>
+    <string name="known_for_production">Produktion</string>
+    <string name="known_for_crew">Crew</string>
+
+    <string name="dark_mode_on">Ein</string>
+    <string name="dark_mode_off">Aus</string>
+    <string name="dark_mode_system_setting">Systemeinstellung verwenden</string>
+</resources>

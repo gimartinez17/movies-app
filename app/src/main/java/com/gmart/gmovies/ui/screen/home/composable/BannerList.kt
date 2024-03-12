@@ -1,0 +1,81 @@
+package com.gmart.gmovies.ui.screen.home.composable
+
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.lazy.LazyRow
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.shadow
+import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.unit.dp
+import com.gmart.domain.model.Detail
+import com.gmart.gmovies.R
+import com.gmart.gmovies.utils.PreviewLayout
+import com.gmart.gmovies.utils.ThemePreviews
+import com.gmart.gmovies.utils.mockMovieDetails
+import com.gmart.gmovies.utils.plus
+
+@Composable
+fun BannerList(
+    title: String,
+    details: List<Detail>,
+    modifier: Modifier = Modifier,
+    contentPadding: PaddingValues = PaddingValues(),
+    onViewAllClick: () -> Unit,
+    onMediaClick: (Int) -> Unit,
+    itemWidth: Int,
+) {
+    val reducedList = details.take(30)
+    Column(modifier = modifier) {
+        Row(
+            modifier = Modifier
+                .padding(contentPadding.plus(PaddingValues(top = 12.dp, bottom = 8.dp))),
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            Text(
+                modifier = Modifier.weight(1f),
+                text = title,
+                style = MaterialTheme.typography.titleMedium
+            )
+            TextButton(onClick = onViewAllClick) {
+                Text(text = stringResource(id = R.string.view_all))
+            }
+        }
+        LazyRow(
+            horizontalArrangement = Arrangement.spacedBy(12.dp),
+            contentPadding = contentPadding,
+        ) {
+            items(reducedList.size) { index ->
+                BannerItem(
+                    detail = reducedList[index],
+                    modifier = Modifier
+                        .width(itemWidth.dp)
+                        .shadow(6.dp, shape = MaterialTheme.shapes.medium, clip = false),
+                    onClick = onMediaClick
+                )
+            }
+        }
+    }
+}
+
+@ThemePreviews
+@Composable
+private fun BannerListPreview() {
+    PreviewLayout {
+        BannerList(
+            title = "Upcoming",
+            details = List(6) { mockMovieDetails },
+            onViewAllClick = {},
+            onMediaClick = {},
+            itemWidth = 250
+        )
+    }
+}
