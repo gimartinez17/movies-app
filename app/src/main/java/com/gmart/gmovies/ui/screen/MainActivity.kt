@@ -56,7 +56,7 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         installSplashScreen()
         super.onCreate(savedInstanceState)
-        splashAnimation()
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) splashAnimation()
         setContent {
             val networkStatus by viewModel.networkStatus.collectAsStateWithLifecycle()
             val configState by viewModel.themeState.collectAsStateWithLifecycle()
@@ -86,7 +86,6 @@ class MainActivity : ComponentActivity() {
 
     @RequiresApi(Build.VERSION_CODES.S)
     private fun splashAnimation() {
-
         splashScreen.setOnExitAnimationListener { splashScreenView ->
             val slideUp = ObjectAnimator.ofFloat(
                 splashScreenView,
