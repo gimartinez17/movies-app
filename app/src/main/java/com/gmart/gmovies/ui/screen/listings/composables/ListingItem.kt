@@ -80,7 +80,7 @@ fun ListingItem(
                             if (backdropPath?.isNotBlank() == true) Visible else Gone
                         height = Dimension.fillToConstraints
                     }
-                    .background(MaterialTheme.colorScheme.surface.copy(alpha = 0.35f))
+                    .background(MaterialTheme.colorScheme.surface.copy(alpha = 0.4f))
             )
             Column(modifier = Modifier
                 .padding(start = 16.dp, end = 16.dp, bottom = 16.dp, top = 8.dp)
