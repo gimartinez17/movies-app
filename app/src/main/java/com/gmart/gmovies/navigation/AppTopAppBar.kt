@@ -78,7 +78,7 @@ fun AppTopAppBar(
                         .size(36.dp)
                         .background(
                             color = if (appBarState.showContrastColor)
-                                MaterialTheme.colorScheme.surface.copy(alpha = 0.25f)
+                                MaterialTheme.colorScheme.surface.copy(alpha = 0.4f)
                             else
                                 Color.Transparent,
                             shape = CircleShape
@@ -126,7 +126,7 @@ fun TopAppBarWithLogoPreview() {
                             .size(36.dp)
                             .background(
                                 color = if (inverseColor)
-                                    MaterialTheme.colorScheme.onSurface.copy(alpha = 0.25f)
+                                    MaterialTheme.colorScheme.onSurface.copy(alpha = 0.4f)
                                 else
                                     Color.Transparent,
                                 shape = CircleShape

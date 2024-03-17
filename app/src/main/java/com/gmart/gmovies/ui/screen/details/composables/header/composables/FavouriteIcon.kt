@@ -31,7 +31,7 @@ internal fun FavouriteIcon(
             .size(36.dp)
             .background(
                 color = if (showContrastColor)
-                    MaterialTheme.colorScheme.surface.copy(alpha = 0.25f)
+                    MaterialTheme.colorScheme.surface.copy(alpha = 0.4f)
                 else
                     Color.Transparent,
                 shape = CircleShape
