@@ -67,6 +67,7 @@ fun ExpandedMediaPage(
                     scaleY *= scale
                 }
                 .shadow(6.dp, shape = MaterialTheme.shapes.medium, clip = false),
+            onMediaClick = { onMediaClick(detail.id) },
         )
         Text(
             text = if (detail.overview?.isNotBlank() == true) detail.overview!! else detail.title,
@@ -101,7 +102,7 @@ fun ExpandedMediaPage(
             )
         ) {
             Text(
-                text = stringResource(id = R.string.more_info).upperString(),
+                text = stringResource(id = R.string.more_info).uppercase(),
                 color = MaterialTheme.colorScheme.primary
             )
         }
