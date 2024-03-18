@@ -20,8 +20,8 @@ android {
         applicationId "com.gmart.gmovies"
         minSdk 26
         targetSdk 34
-        versionCode 11
-        versionName "2.0.0"
+        versionCode 12
+        versionName "2.0.1"
 
         buildConfigField "String", "BASE_URL", "\"https://api.themoviedb.org/\""
         buildConfigField "String", "IMG_URL_S", "\"https://image.tmdb.org/t/p/w500\""
